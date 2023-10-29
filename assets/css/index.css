@@ -25,6 +25,16 @@ a {
   color: var(--text-main);
 }
 
+
+
+
+
+/* logOut page */
+.logOut_container{
+  border: 1 solid;
+  margin: auto;
+}
+
 nav {
   padding: 10px 30px;
   display: flex;
