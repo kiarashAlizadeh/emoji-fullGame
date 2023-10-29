@@ -11,3 +11,13 @@ body {
 a {
   text-decoration: none;
 }
+
+
+
+
+
+/* logOut page */
+.logOut_container{
+  border: 1 solid;
+  margin: auto;
+}
