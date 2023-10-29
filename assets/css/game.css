@@ -1,0 +1,57 @@
+.game_container{
+    background-color: var(--secendary-color);
+    width: 855px;
+    height: 663px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.game_timer{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-weight: 900;
+    color: var(--text-orange);
+}
+
+.game_q{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.game_q p{
+    margin-bottom: 20px;
+}
+.game_a{
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 12px;
+}
+
+.game_btn{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.game_btn input{
+    padding: 5px 10px;
+    background-color: var(--text-orange);
+    color: white;
+    border-radius: 10px;
+}
+.game_btn a{
+   
+    padding: 5px 10px;
+    background-color: var(--text-orange);
+    color: white;
+    border-radius: 10px;
+}
+
