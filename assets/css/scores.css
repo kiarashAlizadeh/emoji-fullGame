@@ -1,0 +1,33 @@
+/* High Scores */
+.scores-container {
+  background-color: var(--secendary-color);
+  width: 855px;
+  height: 663px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px 40px;
+  display: flex;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  color: var(--text-head);
+  font-weight: 900;
+  font-size: 20px;
+}
+
+td,
+th {
+  border: 1px solid var(--text-head);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #cacaca;
+}

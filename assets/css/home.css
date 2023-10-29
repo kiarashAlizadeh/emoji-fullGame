@@ -1,0 +1,32 @@
+/* main page */
+.container-mainpage {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secendary-color);
+  width: 855px;
+  border-radius: 30px;
+  align-items: center;
+  margin: auto;
+  padding: 20px 40px;
+}
+
+.container-mainpage img {
+  width: 645px;
+}
+
+.container-mainpage .signin {
+  display: flex;
+  align-items: center;
+}
+
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#login-text {
+  font-size: 50px;
+  font-weight: 900;
+}
