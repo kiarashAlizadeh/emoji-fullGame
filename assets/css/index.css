@@ -1,3 +1,13 @@
+/* colors */
+:root{
+    --main-color : #53a0bb; 
+    --secendary-color : #fff1da; 
+    --text-head: #181e4b;
+    --text-main: #5c82b0;
+}
+
+/* color:var(--header-text1); */
+
 /* css reset */
 * {
   margin: 0;
