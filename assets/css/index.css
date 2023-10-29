@@ -25,31 +25,6 @@ a {
   color: var(--text-main);
 }
 
-
-
-
-
-/* logOut page */
-.logOut_Container{
-  border: 2px solid #fff1da;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  width: 25%;
-  height: 100px;
-  /* align-items: center; */
-  text-align: center;
-  padding: 15px;
-  background-color: #53a0bb;
-}
-
-
-.logOut_first{
-  width: 100%;
-  height: 50%;
-  border-bottom: 2px solid #fff1da;
-}
-
 nav {
   padding: 10px 30px;
   display: flex;
@@ -79,68 +54,4 @@ nav ul li a {
   color: var(--text-head);
   font-weight: 800;
   font-size: 20px;
-}
-
-/* main page */
-.container-mainpage {
-  display: flex;
-  flex-direction: column;
-  background-color: var(--secendary-color);
-  width: 855px;
-  border-radius: 30px;
-  align-items: center;
-  margin: auto;
-  padding: 20px 40px;
-}
-
-.container-mainpage img {
-  width: 645px;
-}
-.container-mainpage .signin {
-  display: flex;
-  align-items: center;
-}
-.login-box {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-}
-
-#login-text {
-  font-size: 50px;
-  font-weight: 900;
-}
-
-/* High Scores */
-.scores-container {
-  background-color: var(--secendary-color);
-  width: 855px;
-  height: 663px;
-  margin: auto;
-  border-radius: 30px;
-  padding: 20px 40px;
-  display: flex;
-}
-
-
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-}
-th{
-    color: var(--text-head);
-    font-weight: 900;
-    font-size: 20px;
-}
-
-td, th {
-  border: 1px solid var(--text-head);
-  text-align: left;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #cacaca;
 }
