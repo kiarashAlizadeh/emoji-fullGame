@@ -1,25 +1,28 @@
 /* colors */
-:root{
-    --main-color : #53a0bb; 
-    --secendary-color : #fff1da; 
-    --text-head: #181e4b;
-    --text-main: #5c82b0;
+:root {
+  --main-color: #53a0bb;
+  --secendary-color: #fff1da;
+  --text-head: #181e4b;
+  --text-main: #5c82b0;
 }
 
 /* color:var(--header-text1); */
 
 /* css reset */
 * {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
 body {
   font-size: 16px;
+  background-color: var(--main-color);
 }
 
 a {
   text-decoration: none;
+  color: var(--text-main);
 }
 
 
@@ -47,18 +50,97 @@ a {
   border-bottom: 2px solid #fff1da;
 }
 
-.logOut-second{
-  height: 50%;
-  align-items: center;
+nav {
+  padding: 10px 30px;
   display: flex;
-  justify-content: center;
-  background-color: ;
- 
-
+  justify-content: space-around;
+  background-color: white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
 }
-.logOut-second a{
-  width: 50px;
- 
+nav span {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--text-head);
+}
+nav span img {
+  width: 40px;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 10px;
+}
+nav ul li a {
+  color: var(--text-head);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+/* main page */
+.container-mainpage {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secendary-color);
+  width: 855px;
+  border-radius: 30px;
+  align-items: center;
+  margin: auto;
+  padding: 20px 40px;
+}
+
+.container-mainpage img {
+  width: 645px;
+}
+.container-mainpage .signin {
+  display: flex;
+  align-items: center;
+}
+.login-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+#login-text {
+  font-size: 50px;
+  font-weight: 900;
+}
+
+/* High Scores */
+.scores-container {
+  background-color: var(--secendary-color);
+  width: 855px;
+  height: 663px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px 40px;
+  display: flex;
+}
 
 
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+th{
+    color: var(--text-head);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+td, th {
+  border: 1px solid var(--text-head);
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #cacaca;
 }
