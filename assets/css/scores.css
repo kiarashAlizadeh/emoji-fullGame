@@ -1,6 +1,7 @@
 /* High Scores */
 .scores-container {
   background-color: var(--secendary-color);
+  max-width: 100%;
   width: 855px;
   height: 663px;
   margin: auto;

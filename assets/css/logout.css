@@ -2,14 +2,14 @@
 
 
 /* logOut page */
-.logOut_Container {
+.Container-logOut {
   border: 2px solid #fff1da;
+  max-width: 100%;
   margin: auto;
   display: flex;
   flex-direction: column;
   width: 25%;
   height: 100px;
-  /* align-items: center; */
   text-align: center;
   padding: 15px;
   background-color: var(--secendary-color);
@@ -18,12 +18,12 @@
 
 }
 
-.logOut_first {
+.logOut-question {
   width: 100%;
   height: 50%;
   border-bottom: 2px solid black;
 }
-.logOut-second{
+.logOut-btn{
   display: flex;
   justify-content: space-around;
 }

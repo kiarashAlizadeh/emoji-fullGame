@@ -1,0 +1,24 @@
+/* help */
+.container-help {
+  background-color: var(--secendary-color);
+  max-width: 100%;
+  width: 855px;
+  height: 663px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-help p {
+  width: 100%;
+  height: calc(100% - 2rem);
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 0;
+  outline: 3px solid;
+  border-radius: 1rem;
+}
