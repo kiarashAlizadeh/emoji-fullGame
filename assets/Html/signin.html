@@ -9,35 +9,39 @@
     <title>Sign In</title>
   </head>
   <body>
-     <!-- navigationBar -->
+    <!-- navigationBar -->
     <nav>
       <span>
-        <img src="../images/logo.svg" alt="" />
+        <img src="../images/logo.svg" alt="logo" />
         Quiz Game
       </span>
       <ul>
         <li><a href="../../index.html">Home</a></li>
         <li><a href="./scores.html">Scores</a></li>
-       
+
         <li><a href="./game.html">Game</a></li>
         <li><a href="./help.html">Help</a></li>
         <li><a href="./signin.html">Sing In</a></li>
         <li><a href="./signup.html">Sign Up</a></li>
         <li><a href="./logout.html">Log Out</a></li>
-  
       </ul>
     </nav>
+
+    <!-- signin Section -->
     <div class="container-signup">
       <div class="form-signup">
         <span id="signup-text">Sign In</span>
         <form action="">
-          <input type="text" name="" id="" placeholder="Enter UserName or Email" />
-          <input type="password" name="" id="" placeholder="Password" />
-          <input type="submit" value="Submit" />
+          <input type="text" placeholder="Enter UserName or Email" />
+          <input type="password" placeholder="Password" />
+          <input id="signin-btn" type="submit" value="Sign In" />
         </form>
-        <span> Don't Have an Account? <a href="./signup.html">Sign Up</a> </span>
+        <span>
+          Don't Have an Account?
+          <a href="./signup.html" id="signup-link">Sign Up</a>
+        </span>
       </div>
-      <img src="../images/signin.svg" alt="" />
+      <img src="../images/signin.svg" alt="signin" />
     </div>
   </body>
 </html>

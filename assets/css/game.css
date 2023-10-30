@@ -1,59 +1,73 @@
-/* game */
-.container-game{
-    background-color: var(--secendary-color);
-    max-width: 100%;
-    width: 855px;
-    height: 663px;
-    margin: auto;
-    border-radius: 30px;
-    padding: 20px 40px;
-    display: flex;
-    align-items: center;
-    position: relative;
+/* game page */
+.container-game {
+  background-color: var(--secendary-color);
+  max-width: 100%;
+  width: 855px;
+  height: 663px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-.game-timer{
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-weight: 900;
-    color: var(--text-orange);
+.game-timer {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-weight: 900;
+  color: var(--text-orange);
 }
 
-.game-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
+.game-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
 }
 
-.game-form p{
-    margin-bottom: 20px;
+.game-form p {
+  margin-bottom: 20px;
 }
-.game-checkbox{
-    display: flex;
-    flex-direction: column;
-    margin-left: 30px;
-    gap: 12px;
+.game-checkbox {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  gap: 12px;
+  cursor: pointer;
 }
-
-.game_btn{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-}
-.game_btn input{
-    padding: 5px 10px;
-    background-color: var(--text-orange);
-    color: white;
-    border-radius: 10px;
-}
-.game_btn a{
-   
-    padding: 5px 10px;
-    background-color: var(--text-orange);
-    color: white;
-    border-radius: 10px;
+.game-checkbox span:hover {
+  color: #555;
 }
 
+.game-checkbox input {
+  cursor: pointer;
+}
+
+.game_btn {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.game_btn input {
+  padding: 5px 10px;
+  background-color: var(--text-orange);
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+.game_btn input:hover {
+  opacity: 80%;
+}
+.game_btn a {
+  padding: 5px 10px;
+  background-color: var(--text-orange);
+  color: white;
+  border-radius: 10px;
+}
+.game_btn a:hover {
+  opacity: 80%;
+}

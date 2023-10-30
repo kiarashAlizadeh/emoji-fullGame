@@ -1,4 +1,4 @@
-/* sign up */
+/* sign up page */
 .container-signup {
   background-color: var(--secendary-color);
   max-width: 100%;
@@ -24,10 +24,10 @@
   gap: 20px;
 }
 
-#signup-text{
-    font-size:40px;
-    font-weight: 900;
-    color: var(--text-head);
+#signup-text {
+  font-size: 40px;
+  font-weight: 900;
+  color: var(--text-head);
 }
 
 form {
@@ -42,4 +42,20 @@ form input {
   padding: 5px;
   border-radius: 10px;
   padding: 5px 10px;
+}
+
+#signup-btn {
+  cursor: pointer;
+  background-color: var(--text-orange);
+  border: none;
+  padding: 7px 20px;
+  color: aliceblue;
+}
+
+#signup-btn:hover {
+  opacity: 80%;
+}
+
+#signin-link:hover {
+  color: #275997;
 }

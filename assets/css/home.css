@@ -5,6 +5,7 @@
   background-color: var(--secendary-color);
   max-width: 100%;
   width: 855px;
+  height: 663px;
   border-radius: 30px;
   align-items: center;
   margin: auto;
@@ -12,7 +13,7 @@
 }
 
 .container-mainpage img {
-  width: 645px;
+  width: 600px;
 }
 
 .container-mainpage .signin {
