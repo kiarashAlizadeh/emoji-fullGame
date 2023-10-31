@@ -8,6 +8,8 @@
   height: 663px;
   border-radius: 30px;
   align-items: center;
+  justify-content: center;
+  row-gap: 200px;
   margin: auto;
   padding: 20px 40px;
 }
@@ -18,7 +20,9 @@
 
 .container-mainpage .signin {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
+  row-gap: 50px;
 }
 
 .login-box {
@@ -28,7 +32,17 @@
   gap: 30px;
 }
 
-#login-text {
+#signin-text {
   font-size: 50px;
   font-weight: 900;
+}
+
+#signin-text:hover {
+  color: #214571;
+}
+#signup-text:hover {
+  color: #214571;
+}
+#help-text:hover {
+  color: #214571;
 }
