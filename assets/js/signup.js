@@ -1,5 +1,6 @@
 let Clear = document.querySelector('.clear');
 let btn = document.querySelector('.user-signUpBtn');
+
 btn.addEventListener('click', (e) => {
   e.preventDefault(); // Prevents the default form submission behavior
 
@@ -9,22 +10,39 @@ btn.addEventListener('click', (e) => {
   let Address = document.querySelector('.user-address').value;
   let Pass = document.querySelector('.user-pass').value;
   let Cpass = document.querySelector('.user-cPass').value;
-  let userData = [];
-  userData.push({
-    name: Name,
-    phone: phone,
-    email: Email,
-    address: Address,
-    password: Pass,
-    confirmPassword: Cpass,
-  });
 
-  let jsonData = JSON.stringify(userData);
+  if (
+    Name === '' ||
+    phone === '' ||
+    Email === '' ||
+    Address === '' ||
+    Pass === '' ||
+    Cpass === ''
+  ) {
+    alert('you must fill the form before signup');
+  } else if (Pass !== Cpass) {
+    alert('please check your pass');
+  } else {
+    let userData = [];
+    userData.push({
+      name: Name,
+      phone: phone,
+      email: Email,
+      address: Address,
+      password: Pass,
+      confirmPassword: Cpass,
+      scores: '',
+    });
 
-  localStorage.setItem('userData', jsonData);
-  console.log(jsonData);
+    let jsonData = JSON.stringify(userData);
+
+    localStorage.setItem('userData', jsonData);
+    console.log(jsonData);
+    alert('Successful registration and you are loged in');
+    localStorage.setItem('islogin', 'true');
+    window.location.href = '../Html/emoji.html';
+  }
 });
-
 let StoredData = localStorage.getItem('userData');
 
 if (StoredData) {
@@ -32,10 +50,9 @@ if (StoredData) {
   let f = uData[0].name;
   console.log(f);
 }
-// const resetStorage = () => {
 
-// };
-
+// clear local storage btn
 Clear.addEventListener('click', () => {
   localStorage.removeItem('userData');
+  localStorage.removeItem('islogin');
 });
