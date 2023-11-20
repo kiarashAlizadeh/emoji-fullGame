@@ -25,18 +25,16 @@ a {
   color: var(--text-main);
 }
 
-
-
 /* navbar section   */
-nav{
+nav {
   padding: 10px 30px;
   display: flex;
   justify-content: space-around;
   margin-bottom: 30px;
-  margin:5px 40px;
+  margin: 5px 40px;
   border: 2px solid var(--text-gold);
 }
-nav span{
+nav span {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -44,42 +42,84 @@ nav span{
   font-size: 20px;
   color: var(--text-gold);
 }
-nav span img{
+nav span img {
   width: 60px;
 }
 
-nav ul{
+nav ul {
   display: flex;
   align-items: center;
   list-style: none;
   gap: 20px;
 }
-nav ul li a{
+nav ul li a {
   color: var(--text-main);
   font-weight: 600;
   font-size: 20px;
-
 }
 
-nav ul li a:hover{
+nav ul li a:hover {
   color: var(--text-gold);
   opacity: 50%;
 }
 
-.active{
+.active {
   font-weight: 900;
   font-size: 21px;
   color: var(--text-gold);
 }
 
-#signIn-SignUp{
+#signIn-SignUp {
   padding: 10px;
   background: var(--background);
   color: var(--text-main);
   border: 1px solid var(--text-gold);
 }
 
-
-
+.container {
+  height: 75%;
+  width: 100%;
+}
 
 /* footer section */
+footer {
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(../images/footer.svg);
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+}
+
+#footer-emoji {
+  width: 250px;
+}
+
+.footer-title {
+  color: var(--text-gold);
+  font-size: 4rem;
+  padding-right: 500px;
+}
+
+.footer-dec {
+  margin-top: 15px;
+  width: 450px;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.copy-right {
+  background-color: #2a2a2a;
+  width: fit-content;
+  margin: 10px auto;
+  color: var(--text-gold);
+  padding: 10px 20px;
+  border-radius: 15px;
+}
