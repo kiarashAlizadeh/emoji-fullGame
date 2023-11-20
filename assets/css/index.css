@@ -28,9 +28,56 @@ a {
 
 
 /* navbar section   */
+nav{
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin:5px 40px;
+  border: 2px solid var(--text-gold);
+}
+nav span{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 800;
+  font-size: 20px;
+  color: var(--text-gold);
+}
+nav span img{
+  width: 60px;
+}
 
+nav ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+nav ul li a{
+  color: var(--text-main);
+  font-weight: 600;
+  font-size: 20px;
 
+}
 
+nav ul li a:hover{
+  color: var(--text-gold);
+  opacity: 50%;
+}
+
+.active{
+  font-weight: 900;
+  font-size: 21px;
+  color: var(--text-gold);
+}
+
+#signIn-SignUp{
+  padding: 10px;
+  background: var(--background);
+  color: var(--text-main);
+  border: 1px solid var(--text-gold);
+}
 
 
 
