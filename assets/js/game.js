@@ -63,3 +63,28 @@ setTimeout(function () {
     });
   }, 2000);
 }, 500);
+
+/////////////////////////
+
+function startTimer(timer) {
+  let remainTime = timer;
+  updateTimerDisplay(remainTime);
+//counter
+  const timerInterval = setInterval(function() {
+    remainTime--;
+    updateTimerDisplay(remainTime);
+    if (remainTime <= 0) {
+      clearInterval(timerInterval);
+      updateTimerDisplay(0);
+      alert("Time Up!");
+    }
+  }, 1000); 
+}
+function updateTimerDisplay(seconds) {
+  const minutes = Math.floor(seconds / 60);
+  const remainingSeconds = seconds % 60;
+  const formattedTime = `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+  document.querySelector('.game-timer').innerText = formattedTime;
+}
+
+startTimer(90);
