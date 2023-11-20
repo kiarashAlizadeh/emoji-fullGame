@@ -64,6 +64,7 @@
   
   .left span{
     color: var(--text-gold);
+  
   }
 
 #signIn-btn{
@@ -84,6 +85,18 @@
   
 }
 
+#separator {
+    width: 300px;
+  }
+
 #SignUp-Link:hover{
+    color: var(--text-gold);
+    opacity: 75%;
+}
+
+#SignIn-title{
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 900;
     color: var(--text-gold);
 }
