@@ -62,6 +62,9 @@
     background-color: #a9a9a9;
   }
   
+  .left span{
+    color: var(--text-gold);
+  }
 
 #signIn-btn{
     padding: 10px 15px;
