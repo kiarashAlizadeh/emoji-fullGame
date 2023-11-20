@@ -47,6 +47,17 @@ for (var i = 0; i < emojis.length; i++) {
             gameActive = false;
             alert('You have won the game!😍');
           }
+
+          const userLogin = localStorage.getItem('userLogin'); // دریافت نام کاربری از لوکال استوریج
+          const users = JSON.parse(localStorage.getItem('userData')); // دریافت اطلاعات کاربران از لوکال استوریج
+          const player = users.find((user) => user.name === userLogin); // یافتن اطلاعات کاربر
+
+          if (player) {
+            scorePlayer = Number(player.scores);
+            scorePlayer += 1; // افزودن یک امتیاز به کاربر
+            player.scores = scorePlayer;
+            localStorage.setItem('userData', JSON.stringify(users)); // بروزرسانی اطلاعات کاربران در لوکال استوریج
+          }
         } else {
           secondBox.classList.remove('boxOpen');
           firstBox.classList.remove('boxOpen');
@@ -101,7 +112,9 @@ function startTimer(timer) {
 function updateTimerDisplay(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
-  const formattedTime = `${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+  const formattedTime = `${minutes}:${
+    remainingSeconds < 10 ? '0' : ''
+  }${remainingSeconds}`;
   document.querySelector('.game-timer').innerText = formattedTime;
 }
 
@@ -109,7 +122,7 @@ function startGame() {
   const userResponse = confirm('Ready to play?');
 
   if (userResponse) {
-    startTimer(5);
+    startTimer(60);
   } else {
     alert('Ok Bye');
   }

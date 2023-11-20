@@ -2,6 +2,6 @@
 let Clear = document.querySelector('.clear');
 Clear.addEventListener('click', () => {
     localStorage.removeItem('userData');
-    localStorage.removeItem('islogin');
+    localStorage.removeItem('userLogin');
   });
   
