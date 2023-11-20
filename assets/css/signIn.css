@@ -40,19 +40,6 @@
     align-items: center;
 }
 
-/* .Container-SignIn img{
-    width: 400px;
-
-} */
-
-
-
-/* #SignIn-text{
-    font-size: 40px;
-    font-weight: 800;
-    color: var( --secendary-color);
-    opacity: 80%;
-} */
 
 .left form{
     display: flex;
