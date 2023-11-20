@@ -7,43 +7,73 @@
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/signIn.css">
   <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
-  <title>Document</title>
+  <title>Sign In | Emoji Game</title>
 </head>
 <body>
   
 <!-- navbar -->
 <nav>
-  <span>
-    <img src="../images/logo.png" alt="">
+  <a href="../../index.html" id="brand-logo">
+    <img src="../images/Game/Happy.gif" alt="" />
     Emoji Game
-  </span>
+  </a>
 
   <ul>
-    <li><a class="active" href="">Game</a></li>
-    <li><a href="">Scores</a></li>
-    <li><a href="">Setting</a></li>
+    <li><a class="active" href="../../index.html">Home</a></li>
+    <li><a href="./game.html">Game</a></li>
+    <li><a href="./scores.html">Scores</a></li>
+    <li><a href="./settings.html">Setting</a></li>
   </ul>
 
-  <a id="signIn-SignUp" href=""> signIn/SignUp</a> 
+  <a id="signIn-SignUp" href="./signIn.html"><img src="../images/user.svg" alt="">Login</a>
 </nav>
-
 <!-- signin section -->
 
+
 <div class="Container-SignIn">
-  <div class="Form-SignIn">
-    <span id="SignIn-text">Sign In</span>
+
+  <div class="left">
+
+    <span id="SignIn-title">Sign In</span>
     <form action="">
       <input type="text" id="Email" placeholder="Email" />
       <input type="password" id="Password" placeholder="Password" />
       <input id="signIn-btn" type="Submit" value="Sign In" />
     </form>
+
+    <img id="separator" src="../images/signUp/Separator.png" alt="" />
     <span>
-      Don't Have an Account?
+
+      Don't Have an Account? &nbsp
       <a href="./signUp.html" id="SignUp-Link">Sign Up</a>
+    
     </span>
   </div>
-  <img src="../images/signin.svg" alt="">
+
+  <div class="right">
+    <img src="../images/signUp/earth-group.svg" draggable="false" alt="">
+    <span> Are You Ready to Start Again? </span>
+  </div>
 </div>
+
+
+ <!-- footer -->
+ <footer>
+  <div class="footer">
+    <img id="footer-emoji" src="./assets/images/footer-emoji.png" alt="" />
+    <span class="footer-title">Emoji game</span>
+    <span class="footer-dec"
+      >Engage in a fun-filled game of emoji selections! Test your wit and
+      quick thinking as you choose the right emojis to advance and outscore
+      your friends. Compete head-to-head, aiming for the highest score to
+      emerge victorious. Join the excitement and challenge your emoji
+      prowess in this thrilling game!</span
+    >
+  </div>
+  <div class="copy-right">
+    ©2023 Emoji Game UK, Inc. All Rights Reserved.
+  </div>
+</footer>
  <script src="../js/signIn.js"></script>
 </body>
 </html>

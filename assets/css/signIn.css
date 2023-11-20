@@ -1,73 +1,103 @@
 .Container-SignIn{
-    background: var(--text-gold);
-    max-width: 100%;
-    width: 855px;
-    height: 663px;
-    margin: auto;
-    border-radius: 30px;
-    padding: 20px 40px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
-    10px 10px 70px rgba(0, 0, 0, 0.25),
-    inset 5px 5px 10px rgba(0, 0, 0, 0.25),
-    inset   5px 5px 10px rgba(255, 255, 5550, 0.2),
-    inset   -5px -5px 15px rgba(0, 0, 0, 0.75);
+    border-radius: 15px;
+    margin: 30px auto;
+    max-width: 1500px;
+    box-shadow: #d9b2465b 0px -1px 5px;
+ 
 }
 
-.Container-SignIn img{
-    width: 400px;
-
+/* right section */
+.right{
+    position: relative;
+    width: 50%;
 }
 
-.Form-SignIn{
+.right img{
+    width: 100%;
+}
+
+.right span{
+    position: absolute;
+    left: 16px;
+    bottom: 241px;
+    font-size: 3rem;
+    width: 350px;
+    text-shadow: #d9b346 1.95px 1.95px 2.6px;
+    user-select: none;
+}
+
+/* left section */
+.left{
+    background-image: url(../images/signUp/keyboard.png);
+    background-position: center center;
+    border-radius: 15px 0px 0px 15px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
 }
 
-#SignIn-text{
-    font-size: 40px;
-    font-weight: 800;
-    color: var( --secendary-color);
-    opacity: 80%;
-}
 
-form{
+.left form{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    width: 263px;
-    gap: 10px;
+    gap: 15px;
+    width: 500px;
+    margin-bottom: 30px;
 }
 
-form input{
-   
+.left form input{
+    padding: 10px 15px;
     border-radius: 10px;
-    padding: 5px 10px;
+    border: none;
+    width: 350px;
 }
+
+.left form input:hover {
+    background-color: #a9a9a9;
+  }
+  
+  .left span{
+    color: var(--text-gold);
+    margin-top: 15px;
+  
+  }
 
 #signIn-btn{
-    cursor: pointer;
-    background-color: var(--secendary-color);
-    border: none;
-    padding: 7px 20px;
-    color: var(--text-main);
-    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
-    inset   2px 2px 5px rgba(255, 255, 5550, 0.5),
-    inset   -5px -5px 5px rgba(0, 0, 0, 0.75);
-  
+    padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid var(--text-gold);
+  width: 350px;
+  margin-top: 10px;
+  width: 150px;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 #signIn-btn:hover{
     background-color: var(--text-gold);
-    opacity: 80%;
-    color: var(--secendary-color);
+    opacity: 35%;
+    color: white;
+  
 }
 
+#separator {
+    width: 300px;
+  }
+
 #SignUp-Link:hover{
-    color: var(--secendary-color);
+    color: var(--text-gold);
+    opacity: 75%;
+}
+
+#SignIn-title{
+    margin-bottom: 25px;
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--text-gold);
 }

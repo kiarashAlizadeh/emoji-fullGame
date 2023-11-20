@@ -40,6 +40,13 @@
 }
 
 /* form section */
+.signUp-title {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--text-gold);
+}
+
 .right form {
   display: flex;
   flex-direction: column;
@@ -74,7 +81,7 @@
 
 #signup-btn:hover {
   background-color: var(--text-gold);
-  opacity: 35%;
+  opacity: 80%;
   color: white;
 }
 
