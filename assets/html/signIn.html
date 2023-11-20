@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/index.css">
   <link rel="stylesheet" href="../css/signIn.css">
+  <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon">
   <title>Document</title>
 </head>
 <body>
@@ -26,6 +27,23 @@
   <a id="signIn-SignUp" href=""> signIn/SignUp</a> 
 </nav>
 
+<!-- signin section -->
 
+<div class="Container-SignIn">
+  <div class="Form-SignIn">
+    <span id="SignIn-text">Sign In</span>
+    <form action="">
+      <input type="text" id="Email" placeholder="Email" />
+      <input type="password" id="Password" placeholder="Password" />
+      <input id="signIn-btn" type="Submit" value="Sign In" />
+    </form>
+    <span>
+      Don't Have an Account?
+      <a href="./signUp.html" id="SignUp-Link">Sign Up</a>
+    </span>
+  </div>
+  <img src="../images/signin.svg" alt="">
+</div>
+ <script src="../js/signIn.js"></script>
 </body>
 </html>

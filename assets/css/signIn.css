@@ -1,0 +1,73 @@
+.Container-SignIn{
+    background: var(--text-gold);
+    max-width: 100%;
+    width: 855px;
+    height: 663px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+    inset   5px 5px 10px rgba(255, 255, 5550, 0.2),
+    inset   -5px -5px 15px rgba(0, 0, 0, 0.75);
+}
+
+.Container-SignIn img{
+    width: 400px;
+
+}
+
+.Form-SignIn{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#SignIn-text{
+    font-size: 40px;
+    font-weight: 800;
+    color: var( --secendary-color);
+    opacity: 80%;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 263px;
+    gap: 10px;
+}
+
+form input{
+   
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+
+#signIn-btn{
+    cursor: pointer;
+    background-color: var(--secendary-color);
+    border: none;
+    padding: 7px 20px;
+    color: var(--text-main);
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset   2px 2px 5px rgba(255, 255, 5550, 0.5),
+    inset   -5px -5px 5px rgba(0, 0, 0, 0.75);
+  
+}
+
+#signIn-btn:hover{
+    background-color: var(--text-gold);
+    opacity: 80%;
+    color: var(--secendary-color);
+}
+
+#SignUp-Link:hover{
+    color: var(--secendary-color);
+}
