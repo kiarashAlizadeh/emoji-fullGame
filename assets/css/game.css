@@ -1,9 +1,33 @@
-body{
-    background-image: url('../images/Game/sunglasses.svg'); /* Replace with the actual path to your SVG file */
-    background-size: 25% 40%; /* Auto width, 100% height */
-    background-position: left 250px; /* Position at the left bottom corner */
-    background-repeat: no-repeat; /* Do not repeat the background image */
+
+body::before {
+  content: "";
+  position: fixed;
+  top: -90px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/Game/sunglasses.svg');
+  background-size: 25% 45%;
+  background-position: left 200px;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Adjust the opacity value as needed */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
+body::after {
+  content: "";
+  position: fixed;
+  top: 170px;
+  width: 100%;
+  height: 100%;
+  background-image: url('../images/Game/with-heart-eyes.svg');
+  background-size: 25% 45%;
+  background-position: right 200px;
+  background-repeat: no-repeat;
+  opacity: 0.3; /* Adjust the opacity value as needed */
+  z-index: -1; /* Ensure the pseudo-element is behind the content */
+}
+
+
 /* game page */
 .container-game {
     background-color: var(--secendary-color);
