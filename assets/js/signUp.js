@@ -39,7 +39,7 @@ btn.addEventListener('click', (e) => {
     console.log(jsonData);
     alert('Successful registration and you are loged in');
     localStorage.setItem('islogin', 'true');
-    window.location.href = '../html/game.html';
+    window.location.href = './game.html';
   }
 });
 let StoredData = localStorage.getItem('userData');

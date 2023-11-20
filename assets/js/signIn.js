@@ -1,4 +1,4 @@
-let signInBtn = document.getElementById('signin-btn');
+let signInBtn = document.getElementById('signIn-btn');
 
 signInBtn.addEventListener('click', function (e) {
   e.preventDefault();
@@ -17,7 +17,7 @@ signInBtn.addEventListener('click', function (e) {
     } else if (userEmail === storedEmail && userPass === storedPassword) {
       localStorage.setItem('islogin', 'true');
       alert('you are loged in');
-      window.location.href = '../Html/emoji.html';
+      window.location.href = './game.html';
     } else {
       alert('your email or your password is incorrect!');
     }

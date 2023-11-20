@@ -19,10 +19,10 @@ if (isLogin === 'true') {
   loginLogoutButton.style.color = '#ff0000';
   loginLogoutButton.style.fontWeight = 'bold';
   loginLogoutButton.style.fontSize = '20px';
-  loginLogoutButton.href = '../html/signIn.html';
+  loginLogoutButton.href = './signIn.html';
 } else {
   loginLogoutButton.textContent = 'Login';
   loginLogoutButton.insertBefore(img, loginLogoutButton.childNodes[0]);
 
-  loginLogoutButton.href = '../html/signIn.html';
+  loginLogoutButton.href = './signIn.html';
 }
