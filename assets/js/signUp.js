@@ -22,7 +22,13 @@ btn.addEventListener('click', (e) => {
   } else if (Pass !== Cpass) {
     alert('please check your pass');
   } else {
+    let storedData = localStorage.getItem('userData');
     let userData = [];
+
+    if (storedData) {
+      userData = JSON.parse(storedData);
+    }
+
     userData.push({
       name: Name,
       phone: phone,
@@ -34,18 +40,21 @@ btn.addEventListener('click', (e) => {
     });
 
     let jsonData = JSON.stringify(userData);
-
     localStorage.setItem('userData', jsonData);
     console.log(jsonData);
-    alert('Successful registration and you are loged in');
+    alert('Successful registration and you are logged in');
     localStorage.setItem('islogin', 'true');
+    localStorage.setItem('userLogin', Name);
     window.location.href = './game.html';
   }
 });
-let StoredData = localStorage.getItem('userData');
 
-if (StoredData) {
-  let uData = JSON.parse(StoredData);
-  let f = uData[0].name;
-  console.log(f);
+let storedData = localStorage.getItem('userData');
+
+if (storedData) {
+  let uData = JSON.parse(storedData);
+  uData.forEach((user) => {
+    let f = user.name;
+    console.log(f);
+  });
 }

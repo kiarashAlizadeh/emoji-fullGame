@@ -10,18 +10,23 @@ signInBtn.addEventListener('click', function (e) {
 
   if (storedData) {
     let userData = JSON.parse(storedData);
-    let storedEmail = userData[0].email;
-    let storedPassword = userData[0].password;
+    let userExists = userData.find(
+      (user) => user.email === userEmail && user.password === userPass
+    );
+
     if (userEmail === '' || userPass === '') {
       alert('Please enter your email and password');
-    } else if (userEmail === storedEmail && userPass === storedPassword) {
+    } else if (userExists) {
+      let userLogin = userExists.name;
+      localStorage.setItem('userLogin', userLogin);
+
       localStorage.setItem('islogin', 'true');
-      alert('you are loged in');
+      alert('You are logged in!');
       window.location.href = './game.html';
     } else {
-      alert('your email or your password is incorrect!');
+      alert('Your email or password is incorrect!');
     }
   } else {
-    alert('there is no user in storage');
+    alert('There is no user in storage');
   }
 });
