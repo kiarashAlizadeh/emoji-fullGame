@@ -8,6 +8,7 @@ loginLogoutButton.addEventListener('click', function (event) {
 
   if (isLogin === 'true') {
     localStorage.setItem('islogin', 'false');
+    localStorage.setItem('userLogin', '');
   }
 });
 
