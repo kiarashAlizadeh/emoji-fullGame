@@ -32,24 +32,18 @@
     <div class="container-game">
       <span class="game-timer">00:13:46</span>
       <div class="game-form">
-        <div>
-          <p>
-            Which programming language is commonly used as the primary language
-            for web development?
-          </p>
-
-          <div class="game-checkbox">
-            <span> <input type="checkbox" /> Pytyon </span>
-            <span> <input type="checkbox" /> Java </span>
-            <span> <input type="checkbox" /> HTML </span>
-            <span> <input type="checkbox" /> C++ </span>
-          </div>
+        <div class="container">
+          <h2 class="title">
+            <img src="../images/logo.png" alt="logo" draggable="false" />
+            Emoji Game
+          </h2>
+          <div class="game"></div>
+          <button class="reset" onclick="window.location.reload();">
+            Reset Game
+          </button>
         </div>
-        <span class="game_btn">
-          <input type="submit" value="submit" />
-          <a href="">skip</a>
-        </span>
       </div>
     </div>
+    <script src="../js/game.js"></script>
   </body>
 </html>
