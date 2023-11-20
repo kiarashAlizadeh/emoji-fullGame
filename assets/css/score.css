@@ -1,0 +1,38 @@
+
+.scores-container {
+    background:var(--background);
+    max-width: 100%;
+    width: 855px;
+    height: 663px;
+    margin: auto;
+    border-radius: 30px;
+    padding: 20px 40px;
+    display: flex;
+    margin-top: 50px;
+    box-shadow: 2px 3px 37px -6px rgba(217,179,70,0.72);
+    -webkit-box-shadow: 2px 3px 37px -6px rgba(217,179,70,0.72);
+    -moz-box-shadow: 2px 3px 37px -6px rgba(217,179,70,0.72);
+  }
+  
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th {
+    color: var( --text-gold);
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  
+  td,
+  th {
+    text-align: center;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #9e967f;
+  }
+  
