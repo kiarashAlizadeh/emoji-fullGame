@@ -1,0 +1,96 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  margin: 30px auto;
+  max-width: 1500px;
+  box-shadow: #d9b2465b 0px -1px 5px;
+}
+
+/* left section */
+.left {
+  position: relative;
+  width: 50%;
+}
+
+.left img {
+  width: 100%;
+}
+
+.left span {
+  position: absolute;
+  right: 16px;
+  bottom: 241px;
+  font-size: 3rem;
+  width: 350px;
+  text-shadow: #d9b346 1.95px 1.95px 2.6px;
+  user-select: none;
+}
+
+/* right section */
+.right {
+  background-image: url(../images/signUp/keyboard.png);
+  background-position: center center;
+  border-radius: 0px 15px 15px 0px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* form section */
+.right form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  width: 500px;
+  margin-bottom: 30px;
+}
+
+.right form input {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: none;
+  width: 350px;
+}
+
+.right form input:hover {
+  background-color: #a9a9a9;
+}
+
+#signup-btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  border: 2px solid var(--text-gold);
+  width: 350px;
+  margin-top: 10px;
+  width: 150px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+#signup-btn:hover {
+  background-color: var(--text-gold);
+  opacity: 35%;
+  color: white;
+}
+
+#separator {
+  width: 300px;
+}
+
+.create-account {
+  margin-top: 15px;
+  color: var(--text-gold);
+  font-size: 1.1rem;
+  user-select: none;
+  font-weight: 600;
+}
+
+.create-account a:hover {
+  color: var(--text-gold);
+  opacity: 75%;
+}

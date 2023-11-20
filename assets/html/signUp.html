@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/signUp.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <span>
+        <img src="../images/logo.png" alt="" />
+        Emoji Game
+      </span>
+
+      <ul>
+        <li><a class="active" href="">Game</a></li>
+        <li><a href="">Scores</a></li>
+        <li><a href="">Setting</a></li>
+      </ul>
+
+      <a id="signIn-SignUp" href=""> signIn/SignUp</a>
+    </nav>
+
+    <div class="container">
+      <div class="left">
+        <img src="../images/signUp/earth-group.svg" draggable="false" alt="" />
+        <span> Are You Ready to Start? </span>
+      </div>
+      <div class="right">
+        <form action="">
+          <input class="user-name" type="text" placeholder="User Name" />
+          <input class="user-phone" type="text" placeholder="Phone Number" />
+          <input class="user-email" type="email" placeholder="Email Address" />
+          <input
+            class="user-address"
+            type="text"
+            placeholder="Type your Address"
+          />
+          <input class="user-pass" type="password" placeholder="Password" />
+          <input
+            class="user-cPass"
+            type="password"
+            placeholder="Confirm Password"
+          />
+          <button class="user-signUpBtn" id="signup-btn">Sign Up</button>
+        </form>
+        <img id="separator" src="../images/signUp/Separator.png" alt="" />
+        <span class="create-account"
+          >Already have an account? &nbsp
+          <a
+            href="./signIn.html"
+            class="border-b-2 border-transparent text-blue-500 hover:border-gray-400"
+          >
+            Sign in</a
+          ></span
+        >
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <img id="footer-emoji" src="./assets/images/footer-emoji.png" alt="" />
+        <span class="footer-title">Emoji game</span>
+        <span class="footer-dec"
+          >Engage in a fun-filled game of emoji selections! Test your wit and
+          quick thinking as you choose the right emojis to advance and outscore
+          your friends. Compete head-to-head, aiming for the highest score to
+          emerge victorious. Join the excitement and challenge your emoji
+          prowess in this thrilling game!</span
+        >
+      </div>
+      <div class="copy-right">
+        ©2023 Emoji Game UK, Inc. All Rights Reserved.
+      </div>
+    </footer>
+
+    <script src="../js/signUp.js"></script>
+  </body>
+</html>
