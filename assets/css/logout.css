@@ -1,6 +1,6 @@
 /* logOut page */
 .Container-logOut {
-  border: 2px solid #fff1da;
+  /* border: 2px solid #fff1da; */
   max-width: 100%;
   margin: auto;
   display: flex;
@@ -9,9 +9,14 @@
   height: 150px;
   text-align: center;
   padding: 15px;
-  background-color: var(--secendary-color);
+  color: #fff;
+  background: rgb(25, 205, 157);
   border-radius: 30px;
   margin-top: 20%;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+  inset   2px 2px 5px rgba(255, 255, 5550, 0.5),
+  inset   -5px -5px 5px rgba(0, 0, 0, 0.75);
+
 }
 
 .logOut-question {
@@ -31,6 +36,11 @@
   border: 1px solid var(--text-orange);
   padding: 10px 40px;
   border-radius: 20px;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+  inset   2px 2px 5px rgba(255, 255, 5550, 0.5),
+  inset   -5px -5px 5px rgba(0, 0, 0, 0.75);
+  color: #fff;
+
 }
 .logout-btn:hover {
   background-color: var(--text-orange);
