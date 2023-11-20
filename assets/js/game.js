@@ -18,6 +18,8 @@ const emojis = [
 ];
 
 var shuffEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
+var gameActive = true;
+var matchesFound = 0; // Track the number of matches found
 
 for (var i = 0; i < emojis.length; i++) {
   let box = document.createElement('div');
@@ -25,29 +27,38 @@ for (var i = 0; i < emojis.length; i++) {
   box.innerHTML = shuffEmojis[i];
 
   box.onclick = function () {
+    if (!gameActive) return;
+
     this.classList.add('boxOpen');
-    setTimeout(function () {
-      if (document.querySelectorAll('.boxOpen').length > 1) {
-        if (
-          document.querySelectorAll('.boxOpen')[0].innerHTML ==
-          document.querySelectorAll('.boxOpen')[1].innerHTML
-        ) {
-          document.querySelectorAll('.boxOpen')[0].classList.add('boxMatch');
-          document.querySelectorAll('.boxOpen')[1].classList.add('boxMatch');
+    setTimeout(() => {
+      const openBoxes = document.querySelectorAll('.boxOpen');
+      if (openBoxes.length > 1) {
+        const [firstBox, secondBox] = openBoxes;
 
-          document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen');
-          document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen');
+        if (firstBox.innerHTML == secondBox.innerHTML) {
+          firstBox.classList.add('boxMatch');
+          secondBox.classList.add('boxMatch');
+          matchesFound += 2;
 
-          if (document.querySelectorAll('.boxMatch').length == emojis.length) {
+          firstBox.classList.remove('boxOpen');
+          secondBox.classList.remove('boxOpen');
+
+          if (matchesFound == emojis.length) {
+            gameActive = false;
             alert('You have won the game!😍');
           }
         } else {
-          document.querySelectorAll('.boxOpen')[1].classList.remove('boxOpen');
-          document.querySelectorAll('.boxOpen')[0].classList.remove('boxOpen');
+          secondBox.classList.remove('boxOpen');
+          firstBox.classList.remove('boxOpen');
         }
+      }
+
+      if (matchesFound < emojis.length && gameActive) {
+        checkTimer(); // Check if the timer should be stopped
       }
     }, 700);
   };
+
   document.querySelector('.game').appendChild(box);
 }
 
@@ -66,20 +77,27 @@ setTimeout(function () {
 
 /////////////////////////
 
+var timerInterval; // Declare timerInterval globally
+
 function startTimer(timer) {
   let remainTime = timer;
   updateTimerDisplay(remainTime);
-//counter
-  const timerInterval = setInterval(function() {
+
+  timerInterval = setInterval(function () {
     remainTime--;
     updateTimerDisplay(remainTime);
+
     if (remainTime <= 0) {
       clearInterval(timerInterval);
       updateTimerDisplay(0);
-      alert("Time Up!");
+      gameActive = false;
+      alert('Time Up!');
     }
-  }, 1000); 
+
+    checkTimer(); // Check if the timer should be stopped on each interval
+  }, 1000);
 }
+
 function updateTimerDisplay(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
@@ -88,12 +106,18 @@ function updateTimerDisplay(seconds) {
 }
 
 function startGame() {
-  const userResponse = confirm("Ready to play?");
+  const userResponse = confirm('Ready to play?');
 
   if (userResponse) {
-    startTimer(90);
+    startTimer(45);
   } else {
-    alert("Zzz");
+    alert('Zzz');
+  }
+}
+
+function checkTimer() {
+  if (matchesFound == emojis.length) {
+    clearInterval(timerInterval);
   }
 }
 

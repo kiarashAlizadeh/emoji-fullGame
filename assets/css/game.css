@@ -1,12 +1,9 @@
-
-
 body{
     background-image: url('../images/Game/sunglasses.svg'); /* Replace with the actual path to your SVG file */
     background-size: 25% 40%; /* Auto width, 100% height */
     background-position: left bottom; /* Position at the left bottom corner */
     background-repeat: no-repeat; /* Do not repeat the background image */
 }
-
 /* game page */
 .container-game {
     background-color: var(--secendary-color);
@@ -20,8 +17,6 @@ body{
     align-items: center;
     position: relative;
   }
-  
- 
   .game-timer {
     position: absolute;
     top: 35px;
@@ -29,7 +24,6 @@ body{
     font-weight: 900;
     color: var(--text-orange);
   }
-  
   .game-form {
     display: flex;
     flex-direction: column;
@@ -37,7 +31,6 @@ body{
     gap: 10px;
     width: 100%;
   }
-  
   /* game section */
   .container {
     position: relative;
@@ -54,7 +47,6 @@ body{
       inset 5px 5px 10px rgba(255, 255, 5550, 0.2),
       inset -5px -5px 15px rgba(229, 229, 229, 0.15);
   }
-  
   .title {
     font-size: 1.8em;
     font-family:Poppins;
@@ -69,7 +61,7 @@ body{
 
   #img{
     width: 32px;}
- 
+
   .reset {
     padding: 7px 35px;
     color: #f0c908;
@@ -81,7 +73,6 @@ body{
     font-weight: 600;
     border-radius: 10px;
   }
-  
   .reset:hover {
     background-color: #f0c908;
     color: #1b1a1a;
@@ -96,7 +87,6 @@ body{
     transform-style: preserve-3d;
     perspective: 500px;
   }
-  
   .item {
     position: relative;
     width: 65px;
@@ -111,7 +101,6 @@ body{
     transform: rotateY(180deg);
     cursor: pointer;
   }
-  
   .item::after {
     content: '';
     position: absolute;
@@ -121,31 +110,25 @@ body{
     transform: rotateY(0deg);
     backface-visibility: hidden;
   }
-  
   .item.boxOpen {
     transform: rotateY(0deg);
   }
-  
   .boxOpen::after {
     transform: rotateY(180deg);
   }
-  
   .boxOpen::after,
   .boxMatch::after {
     transform: rotateY(180deg);
   }
-  
     .title img {
       width: 50px;
     }
-  
     .item {
       position: relative;
       width: 60px !important;
       height: 60px !important;
       border-radius: 10px !important;
     }
- 
     .item::after {
       border-radius: 10px !important;
     }
