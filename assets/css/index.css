@@ -110,7 +110,7 @@ footer {
 .footer {
   display: flex;
   flex-direction: column;
-  margin-left: 300px;
+  margin-left: 200px;
 }
 
 #footer-emoji {
