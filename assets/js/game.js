@@ -109,9 +109,9 @@ function startGame() {
   const userResponse = confirm('Ready to play?');
 
   if (userResponse) {
-    startTimer(45);
+    startTimer(5);
   } else {
-    alert('Zzz');
+    alert('Ok Bye');
   }
 }
 

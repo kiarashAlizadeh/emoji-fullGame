@@ -1,7 +1,7 @@
 body{
     background-image: url('../images/Game/sunglasses.svg'); /* Replace with the actual path to your SVG file */
     background-size: 25% 40%; /* Auto width, 100% height */
-    background-position: left bottom; /* Position at the left bottom corner */
+    background-position: left 250px; /* Position at the left bottom corner */
     background-repeat: no-repeat; /* Do not repeat the background image */
 }
 /* game page */
