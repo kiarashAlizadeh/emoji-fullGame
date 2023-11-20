@@ -1,4 +1,3 @@
-let Clear = document.querySelector('.clear');
 let btn = document.querySelector('.user-signUpBtn');
 
 btn.addEventListener('click', (e) => {
@@ -40,7 +39,7 @@ btn.addEventListener('click', (e) => {
     console.log(jsonData);
     alert('Successful registration and you are loged in');
     localStorage.setItem('islogin', 'true');
-    window.location.href = '../Html/emoji.html';
+    window.location.href = '../html/game.html';
   }
 });
 let StoredData = localStorage.getItem('userData');
@@ -50,9 +49,3 @@ if (StoredData) {
   let f = uData[0].name;
   console.log(f);
 }
-
-// clear local storage btn
-Clear.addEventListener('click', () => {
-  localStorage.removeItem('userData');
-  localStorage.removeItem('islogin');
-});
