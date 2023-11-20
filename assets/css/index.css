@@ -1,0 +1,38 @@
+/* colors */
+:root {
+  --main-color: #181818;
+  --secendary-color: #191919;
+  --text-gold: #d9b346;
+  --text-main: #fff;
+  --background: #181818;
+}
+
+/* css reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  background: var(--background);
+  color: var(--text-main);
+}
+
+a {
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+
+
+/* navbar section   */
+
+
+
+
+
+
+
+/* footer section */
