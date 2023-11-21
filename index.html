@@ -1,43 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="./assets/css/home.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/images/Game/Happy.gif"
+      type="image/x-icon"
+    />
+    <title>Home | Emoji Game</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./assets/css/index.css" />
-  <link rel="stylesheet" href="./assets/css/home.css" />
-  <link rel="shortcut icon" href="./assets/images/Game/Happy.gif" type="image/x-icon" />
-  <title>Home | Emoji Game</title>
-</head>
-
-<body style="
+  <body
+    style="
       height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-    ">
-  <!-- navbar -->
-  <nav>
-    <a href="./index.html" id="brand-logo">
-      <img src="./assets/images/Game/Happy.gif" alt="" />
-      Emoji Game
-    </a>
+    "
+  >
+    <!-- navbar -->
+    <nav>
+      <a href="./index.html" id="brand-logo">
+        <img src="./assets/images/Game/Happy.gif" alt="" />
+        Emoji Game
+      </a>
 
-    <ul>
-      <li><a class="active" href="./index.html">Home</a></li>
-      <li><a href="./assets/html/game.html">Game</a></li>
-      <li><a href="./assets/html/scores.html">Scores</a></li>
-      <li><a href="./assets/html/settings.html">Settings</a></li>
-    </ul>
+      <ul>
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./assets/html/game.html">Game</a></li>
+        <li><a href="./assets/html/scores.html">Scores</a></li>
+        <li><a href="./assets/html/settings.html">Settings</a></li>
+      </ul>
 
-    <a id="signIn-SignUp" href=""></a>
-  </nav>
-  <span class="userLogin"> <span id="userName-login"></span> <a id="signIn-SignUp" href=""></a></span>
+      <span class="userLogin">
+        <span id="userName-login"></span> <a id="signIn-SignUp" href=""></a>
+        <a id="signIn-SignUp" href=""></a>
+      </span>
+    </nav>
 
-  </nav>
+    <!-- login or start -->
 
-
-  <!-- login or start -->
 
   <div class="infoSection">
 
@@ -94,18 +99,7 @@
       </div>
     </div>
 
-
-
   </div>
-
-
-
-
-
-
-
-
-
 
 
 
@@ -128,12 +122,43 @@
         <a href=""><img src="./assets/images/telegram.png" alt=""></a>
       </div>
     </div>
-    <div class="copy-right">
-      ©2023 Emoji Game UK, Inc. All Rights Reserved.
+
+
+    <!-- brand section-->
+    <div class="brandSection">
+      <span class="brandTitle"> What Do We Use</span>
+      <p class="brandDesc">
+        In this website, we utilized HTML, CSS, and JavaScript <br />
+        <span>to create the design and functionality.</span>
+      </p>
+      <img id="brandLogo" src="./assets/images/home/html-js-css.png" />
     </div>
-  </footer>
 
-  <script src="./assets/js/isLogin-home.js"></script>
-</body>
+    <!-- footer -->
+    <footer>
+      <div class="footer">
+        <img id="footer-emoji" src="./assets/images/footer-emoji.png" alt="" />
+        <span class="footer-title">Emoji Game</span>
+        <span class="footer-dec"
+          >Engage in a fun-filled game of emoji selections! Test your wit and
+          quick thinking as you choose the right emojis to advance and outscore
+          your friends. Compete head-to-head, aiming for the highest score to
+          emerge victorious. Join the excitement and challenge your emoji
+          prowess in this thrilling game!</span
+        >
+        <div class="footer-socialMedia">
+          <a href=""
+            ><img src="./assets/images/instagram.svg" alt="instagram"
+          /></a>
+          <a href=""><img src="./assets/images/x.png" alt="x" /></a>
+          <a href=""><img src="./assets/images/telegram.png" alt="" /></a>
+        </div>
+      </div>
+      <div class="copy-right">
+        ©2023 Emoji Game UK, Inc. All Rights Reserved.
+      </div>
+    </footer>
 
+    <script src="./assets/js/isLogin-home.js"></script>
+  </body>
 </html>

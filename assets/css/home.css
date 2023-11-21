@@ -65,6 +65,7 @@
 .featureSection {
   text-align: center;
 }
+
 .features {
   margin: 0 300px 100px;
 }
@@ -82,10 +83,51 @@
   align-items: center;
   padding: 20px;
 }
+
 .RightContainer {
   display: flex;
   flex-direction: column;
   background-color: chartreuse;
   text-align: left;
   padding: 50px;
+}
+
+/* brand section */
+.brandSection {
+  background-image: url(../images/home/sky.png);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 30px;
+}
+
+.brandTitle {
+  font-size: 52px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-shadow: 1px 3px 0 #969696;
+}
+
+.brandDesc {
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 30px;
+  letter-spacing: 0.2px;
+  margin-bottom: 35px;
+}
+
+.brandDesc span {
+  color: #d9b346;
+  font-weight: 600;
+}
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+}
+
+#brandLogo {
+  width: 550px;
 }
