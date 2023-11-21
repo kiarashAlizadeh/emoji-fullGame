@@ -23,29 +23,6 @@ table {
   padding-bottom: 40px;
 }
 
-
-/* scroll bar css */
-/* width */
-::-webkit-scrollbar {
-  width: 16px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background-color: transparent;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  border-radius: 15px;
-  background-color: rgba(217, 178, 70, 0.469);
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background-color: var(--text-gold);
-}
-
 th {
   color: var(--text-gold);
   font-weight: 900;
