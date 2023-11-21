@@ -36,7 +36,7 @@ btn.addEventListener('click', (e) => {
       address: Address,
       password: Pass,
       confirmPassword: Cpass,
-      scores: '',
+      scores: 0,
     });
 
     let jsonData = JSON.stringify(userData);
