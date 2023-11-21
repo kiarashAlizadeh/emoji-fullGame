@@ -48,6 +48,7 @@
   color: #3b3b3b;
 }
 .infoSection .infoBtnS {
+  width: 150px;
   color: #575653;
   font-weight: bold;
   box-shadow: -1px -1px 10px #928b7b;
