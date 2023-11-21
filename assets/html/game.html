@@ -6,46 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index.css" />
     <link rel="stylesheet" href="../css/game.css" />
-    <link rel="shortcut icon" href="../images/Game/Happy.gif" type="image/x-icon">
+    <link
+      rel="shortcut icon"
+      href="../images/Game/Happy.gif"
+      type="image/x-icon"
+    />
     <title>Game | Emoji Game</title>
   </head>
   <body>
-   <!-- navbar -->
-   <nav>
-    <a href="../../index.html" id="brand-logo">
-      <img src="../images/Game/Happy.gif" alt="" />
-      Emoji Game
-    </a>
-    <ul>
-      <li><a  href="../../index.html">Home</a></li>
-      <li><a class="active" href="./game.html">Game</a></li>
-      <li><a href="./scores.html">Scores</a></li>
-      <li><a href="./settings.html">Settings</a></li>
-    </ul>
-    <span class="userLogin"> <span id="userName-login"></span> <a id="signIn-SignUp" href=""></a></span>
-  </nav>
+    <!-- navbar -->
+    <nav>
+      <a href="../../index.html" id="brand-logo">
+        <img src="../images/Game/Happy.gif" alt="" />
+        Emoji Game
+      </a>
+      <ul>
+        <li><a href="../../index.html">Home</a></li>
+        <li><a class="active" href="./game.html">Game</a></li>
+        <li><a href="./scores.html">Scores</a></li>
+        <li><a href="./settings.html">Settings</a></li>
+      </ul>
+      <span class="userLogin">
+        <span id="userName-login"></span> <a id="signIn-SignUp" href=""></a
+      ></span>
+    </nav>
     <!-- Game Section -->
-        <div class="container-game">
-            <span class="game-timer"></span>
-            <div class="game-form">
-              <div class="container">
-                <h2 class="title">
-                  Emoji Game
-                  <img src="../images/Game/Happy.gif" alt="logo" draggable="false" />    
-                </h2>
-                <div class="game"></div>
-                <button class="reset" onclick="window.location.reload();">
-                  Reset Game
-                </button>
-              </div>
-            </div>
-          </div>
+    <div class="container-game">
+      <span class="game-timer"></span>
+      <div class="game-form">
+        <div class="container">
+          <h2 class="title">
+            Emoji Game
+            <img src="../images/Game/Happy.gif" alt="logo" draggable="false" />
+          </h2>
+          <div class="game"></div>
+          <button class="reset" onclick="window.location.reload();">
+            Reset Game
+          </button>
+        </div>
+      </div>
+    </div>
 
     <!-- footer -->
     <footer>
       <div class="footer">
-        <img id="footer-emoji" src="../images/footer-emoji.png" alt="" />
-        <span class="footer-title">Emoji Game</span>
+        <span class="footer-title"
+          >Emoji Game<img
+            id="footer-emoji"
+            src="../images/footer-emoji.png"
+            alt=""
+        /></span>
         <span class="footer-dec"
           >Engage in a fun-filled game of emoji selections! Test your wit and
           quick thinking as you choose the right emojis to advance and outscore
@@ -54,16 +64,16 @@
           prowess in this thrilling game!</span
         >
         <div class="footer-socialMedia">
-          <a href=""><img src="../images/instagram.svg" alt="instagram"></a>
-          <a href=""><img src="../images/x.png" alt="x"></a>
-          <a href=""><img src="../images/telegram.png" alt=""></a>
+          <a href=""><img src="../images/instagram.svg" alt="instagram" /></a>
+          <a href=""><img src="../images/x.png" alt="x" /></a>
+          <a href=""><img src="../images/telegram.png" alt="" /></a>
         </div>
       </div>
       <div class="copy-right">
         ©2023 Emoji Game UK, Inc. All Rights Reserved.
       </div>
     </footer>
-    
+
     <script src="../js/isLogin.js"></script>
     <script src="../js/game.js"></script>
   </body>
