@@ -95,6 +95,12 @@ nav ul li a:hover {
   width: 100%;
 }
 
+.userLogin{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
 /* footer section */
 footer {
   background-position: center top;
