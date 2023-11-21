@@ -106,7 +106,7 @@ footer {
   background-position: center top;
   background-repeat: no-repeat;
   background-image: url(../images/footer.svg);
-  height: 500px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -120,13 +120,16 @@ footer {
 }
 
 #footer-emoji {
-  width: 100px;
+  width: 75px;
 }
 
 .footer-title {
   color: var(--text-gold);
   font-size: 4rem;
   padding-right: 500px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .footer-dec {
@@ -140,7 +143,7 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 20px 0px;
+  margin-top: 20px;
   gap: 20px;
 }
 
@@ -150,12 +153,12 @@ footer {
 
 .copy-right {
   background-color: #2a2a2a;
-  width: fit-content;
-  margin: 0px auto 10px auto;
   color: var(--text-gold);
   padding: 10px 20px;
   border-radius: 15px;
   font-size: 1.1rem;
+  margin: 0px auto;
+  margin-bottom: 10px;
 }
 
 /* scroll bar css */
