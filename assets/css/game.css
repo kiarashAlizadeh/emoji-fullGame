@@ -30,7 +30,7 @@ body::after {
 
 /* game page */
 .container-game {
-    background-color: var(--secendary-color);
+    background-color: var(--secondary-color);
     max-width: 100%;
     width: 500px;
     height: 620px;
