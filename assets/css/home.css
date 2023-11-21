@@ -211,3 +211,8 @@ margin: 20px;
   display: flex;
   align-items: end;
 }
+
+.BecameMember .right img:hover{
+  scale: 110%;
+  transition: all 3s;
+}
