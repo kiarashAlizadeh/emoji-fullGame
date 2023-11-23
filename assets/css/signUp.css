@@ -1,3 +1,5 @@
+/* SignUp Page Css */
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -7,7 +9,6 @@
   box-shadow: #d9b2465b 0px -1px 5px;
 }
 
-/* left section */
 .left {
   position: relative;
   width: 50%;
@@ -27,7 +28,6 @@
   user-select: none;
 }
 
-/* right section */
 .right {
   background-image: url(../images/signUp/keyboard.png);
   background-position: center center;
@@ -39,7 +39,7 @@
   align-items: center;
 }
 
-/* form section */
+/* Form Section */
 .signUp-title {
   margin-bottom: 25px;
   font-size: 2rem;

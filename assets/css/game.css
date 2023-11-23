@@ -1,6 +1,8 @@
+/* Game Page Css */
 
+/* Background Emoji */
 body::before {
-  content: "";
+  content: '';
   position: fixed;
   top: -90px;
   left: 0;
@@ -14,7 +16,7 @@ body::before {
   z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 body::after {
-  content: "";
+  content: '';
   position: fixed;
   top: 170px;
   width: 100%;
@@ -27,135 +29,147 @@ body::after {
   z-index: -1; /* Ensure the pseudo-element is behind the content */
 }
 
-
-/* game page */
+/* Game page */
 .container-game {
-    background-color: var(--secondary-color);
-    max-width: 100%;
-    width: 500px;
-    height: 620px;
-    margin: auto;
-    border-radius: 30px;
-    padding: 20px 40px;
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  .game-timer {
-    position: absolute;
-    top: 35px;
-    right: 35px;
-    font-weight: 900;
-    color: var(--text-orange);
-  }
-  .game-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    width: 100%;
-  }
-  /* game section */
-  .container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    background: rgb(60, 60, 51);
-    padding: 40px 2px;
-    border-radius: 10%;
-    box-shadow: 25px 25px 75px rgba(109, 75, 2, 0.25),
-      10px 10px 70px rgba(234, 234, 45, 0.15), inset 5px 5px 10px rgba(0, 0, 0, 0.25),
-      inset 5px 5px 10px rgba(255, 255, 5550, 0.2),
-      inset -5px -5px 15px rgba(229, 229, 229, 0.15);
-  }
-  .title {
-    font-size: 1.8em;
-    font-family:Poppins;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    justify-content: center;
-    width: fit-content;
-    user-select: none;
-  }
+  background-color: var(--secondary-color);
+  max-width: 100%;
+  width: 500px;
+  height: 620px;
+  margin: auto;
+  border-radius: 30px;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
 
-  #img{
-    width: 32px;}
+.game-timer {
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  font-weight: 900;
+  color: var(--text-orange);
+}
 
-  .reset {
-    padding: 7px 35px;
-    color: #f0c908;
-    background: #1b1a1a;
-    border: none;
-    font-size: 17px;
-    font-family:Poppins;
-    cursor: pointer;
-    font-weight: 600;
-    border-radius: 10px;
-  }
-  .reset:hover {
-    background-color: #f0c908;
-    color: #1b1a1a;
-  }
-  .game {
-    width: 300px;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 10px;
-    transform-style: preserve-3d;
-    perspective: 500px;
-  }
-  .item {
-    position: relative;
-    width: 65px;
-    height: 65px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 2.2em;
-    background: rgb(46, 50, 51);
-    transition: 0.25s;
-    border-radius: 5px;
-    transform: rotateY(180deg);
-    cursor: pointer;
-  }
-  .item::after {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: #ffffff;
-    transition: 0.5s;
-    transform: rotateY(0deg);
-    backface-visibility: hidden;
-  }
-  .item.boxOpen {
-    transform: rotateY(0deg);
-  }
-  .boxOpen::after {
-    transform: rotateY(180deg);
-  }
-  .boxOpen::after,
-  .boxMatch::after {
-    transform: rotateY(180deg);
-  }
-    .title img {
-      width: 50px;
-    }
-    .item {
-      position: relative;
-      width: 60px !important;
-      height: 60px !important;
-      border-radius: 10px !important;
-    }
-    .item::after {
-      border-radius: 10px !important;
-    }
-  
- 
-  
+.game-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+/* Game Section */
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background: rgb(60, 60, 51);
+  padding: 40px 2px;
+  border-radius: 10%;
+  box-shadow: 25px 25px 75px rgba(109, 75, 2, 0.25),
+    10px 10px 70px rgba(234, 234, 45, 0.15),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(255, 255, 5550, 0.2),
+    inset -5px -5px 15px rgba(229, 229, 229, 0.15);
+}
+
+.title {
+  font-size: 1.8em;
+  font-family: Poppins;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: center;
+  width: fit-content;
+  user-select: none;
+}
+
+#img {
+  width: 32px;
+}
+
+.reset {
+  padding: 7px 35px;
+  color: #f0c908;
+  background: #1b1a1a;
+  border: none;
+  font-size: 17px;
+  font-family: Poppins;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.reset:hover {
+  background-color: #f0c908;
+  color: #1b1a1a;
+}
+
+.game {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  transform-style: preserve-3d;
+  perspective: 500px;
+}
+
+.item {
+  position: relative;
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.2em;
+  background: rgb(46, 50, 51);
+  transition: 0.25s;
+  border-radius: 5px;
+  transform: rotateY(180deg);
+  cursor: pointer;
+}
+
+.item::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: #ffffff;
+  transition: 0.5s;
+  transform: rotateY(0deg);
+  backface-visibility: hidden;
+}
+
+.item.boxOpen {
+  transform: rotateY(0deg);
+}
+
+.boxOpen::after {
+  transform: rotateY(180deg);
+}
+
+.boxOpen::after,
+.boxMatch::after {
+  transform: rotateY(180deg);
+}
+
+.title img {
+  width: 50px;
+}
+
+.item {
+  position: relative;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 10px !important;
+}
+
+.item::after {
+  border-radius: 10px !important;
+}

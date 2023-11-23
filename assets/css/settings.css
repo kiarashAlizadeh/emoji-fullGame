@@ -1,3 +1,5 @@
+/* Setting Page Css */
+
 .setting {
   width: 600px;
   height: 350px;
@@ -11,7 +13,7 @@
 }
 
 table {
-  background-image: url("../images/imgSetting/8138727.png");
+  background-image: url('../images/setting/settings.png');
   background-size: 10% 20%;
   background-position: right top;
   background-repeat: no-repeat;

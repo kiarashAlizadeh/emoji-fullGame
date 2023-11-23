@@ -1,5 +1,6 @@
-/* login or start */
+/* Home Page Css */
 
+/* Login or Start Section */
 .infoSection {
   margin: 150px auto;
   display: flex;
@@ -10,7 +11,6 @@
   align-content: center;
   padding: 20px;
   text-align: center;
-  
 }
 
 .infoSection h1 {
@@ -24,15 +24,17 @@
 
 .infoSection .infoBtn {
   margin: 40px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }
 
 .infoSection .infoBtnS,
 .infoBtnL {
   cursor: pointer;
   height: 50px;
-  margin: 20px 30px;
-  width: 120px;
-  font-family: Poppins;
+  margin: 20px 0px;
+  width: 150px;
   font-size: 1.1rem;
   transition: 500ms;
   border-radius: 5px;
@@ -48,7 +50,6 @@
   color: #3b3b3b;
 }
 .infoSection .infoBtnS {
-  width: 150px;
   color: #575653;
   font-weight: bold;
   box-shadow: -1px -1px 10px #928b7b;
@@ -62,19 +63,24 @@
   color: #dfd3b6;
 }
 
-/*  featureSection  */
-
+/*  Feature Section  */
 .featureSection {
   height: 800px;
   text-align: center;
   margin-bottom: 100px;
-  background-image:url(../images/home/Union\ \(1\).png);
+  background-image: url(../images/home/Union.png);
   background-repeat: no-repeat;
   background-position: right top;
 }
 
 .features {
   margin: 20px 200px 60px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.features h1 {
+  color: var(--text-gold);
 }
 
 .optionContainer {
@@ -85,7 +91,12 @@
 
 .LeftContainer {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+}
+
+.optionContainer-leftTitle {
   color: #e0c171;
 }
 
@@ -94,6 +105,10 @@
   flex-direction: column;
   text-align: left;
   padding: 50px;
+  width: 800px;
+  background-color: #20202074;
+  border-radius: 20px;
+  margin-top: 40px;
 }
 
 .optionContainer img {
@@ -102,17 +117,17 @@
   margin-right: 20px;
 }
 
-.RightContainer div{
-display: flex;
-margin: 20px;
+.RightContainer div {
+  display: flex;
+  margin: 20px;
 }
 
-
-.RightContainer span{
+.RightContainer p {
   margin-left: 80px;
+  font-size: 0.8rem;
 }
 
-/* brand section */
+/* Brand Section */
 .brandSection {
   background-image: url(../images/home/sky.png);
   display: flex;
@@ -152,7 +167,7 @@ margin: 20px;
   width: 550px;
 }
 
-/* BecameMember section */
+/* BecameMember Section */
 .BecameMember {
   display: flex;
   justify-content: space-around;
@@ -202,7 +217,7 @@ margin: 20px;
   box-shadow: 0px 4px 31px 0px rgba(237, 8, 8, 0.15);
 }
 
-.BecameMember-signUp:hover{
+.BecameMember-signUp:hover {
   cursor: pointer;
   opacity: 65%;
 }
@@ -213,7 +228,7 @@ margin: 20px;
   align-items: end;
 }
 
-.BecameMember .right img:hover{
+.BecameMember .right img:hover {
   scale: 110%;
   transition: all 3s;
 }

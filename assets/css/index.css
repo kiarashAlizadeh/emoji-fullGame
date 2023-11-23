@@ -1,6 +1,9 @@
+/* Main Styles */
+
+/* Poppins Font From Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-/* colors */
+/* Colors */
 :root {
   --main-color: #181818;
   --secondary-color: #191919;
@@ -9,7 +12,7 @@
   --background: #181818;
 }
 
-/* css reset */
+/* Css Reset */
 * {
   margin: 0px;
   padding: 0px;
@@ -28,7 +31,7 @@ a {
   color: var(--text-main);
 }
 
-/* navbar section   */
+/* Navbar Section */
 nav {
   padding: 10px 30px;
   display: flex;
@@ -36,8 +39,8 @@ nav {
   align-items: center;
   margin-bottom: 30px;
   margin: 2px 40px;
-  /* border: 2px solid var(--text-gold); */
 }
+
 #brand-logo {
   display: flex;
   align-items: center;
@@ -46,6 +49,7 @@ nav {
   font-size: 20px;
   color: var(--text-gold);
 }
+
 #brand-logo img {
   width: 60px;
 }
@@ -56,6 +60,7 @@ nav ul {
   list-style: none;
   gap: 20px;
 }
+
 nav ul li a {
   color: var(--text-main);
   font-weight: 600;
@@ -85,7 +90,8 @@ nav ul li a:hover {
   align-items: center;
   gap: 5px;
 }
-#signIn-SignUp:hover{
+
+#signIn-SignUp:hover {
   transition: all 0.5s;
   background-color: var(--text-gold);
 }
@@ -95,13 +101,13 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.userLogin{
+.userLogin {
   display: flex;
   align-items: center;
   gap: 25px;
 }
 
-/* footer section */
+/* Footer Section */
 footer {
   background-position: center top;
   background-repeat: no-repeat;
@@ -139,7 +145,7 @@ footer {
   text-align: justify;
 }
 
-.footer-socialMedia{
+.footer-socialMedia {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -147,8 +153,8 @@ footer {
   gap: 20px;
 }
 
-.footer-socialMedia img{
-  width:40px;
+.footer-socialMedia img {
+  width: 40px;
 }
 
 .copy-right {
@@ -161,7 +167,7 @@ footer {
   margin-bottom: 10px;
 }
 
-/* scroll bar css */
+/* Scrollbar Css */
 /* width */
 ::-webkit-scrollbar {
   width: 16px;
