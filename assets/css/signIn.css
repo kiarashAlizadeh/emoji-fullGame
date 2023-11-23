@@ -1,6 +1,6 @@
 /* SignIn Page Css */
 
-.Container-SignIn {
+.container-SignIn {
   display: flex;
   justify-content: space-between;
   border-radius: 15px;
@@ -66,7 +66,7 @@
   margin-top: 15px;
 }
 
-#signIn-btn {
+#signIn-Btn {
   padding: 10px 15px;
   border-radius: 10px;
   border: 2px solid var(--text-gold);
@@ -77,7 +77,7 @@
   font-weight: 700;
 }
 
-#signIn-btn:hover {
+#signIn-Btn:hover {
   background-color: var(--text-gold);
   opacity: 35%;
   color: white;
@@ -87,12 +87,12 @@
   width: 300px;
 }
 
-#SignUp-Link:hover {
+#signUp-Link:hover {
   color: var(--text-gold);
   opacity: 75%;
 }
 
-#SignIn-title {
+#signIn-Title {
   margin-bottom: 25px;
   font-size: 2rem;
   font-weight: 900;
