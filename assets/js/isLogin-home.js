@@ -1,5 +1,6 @@
 var loginLogoutButton = document.getElementById('signIn-SignUp');
 var userNameButton = document.getElementById('userName-login');
+var gameDisplayNav = document.getElementById('gameDisplay');
 var isLogin = localStorage.getItem('islogin');
 var whoIsLogin = localStorage.getItem('userLogin');
 var img = document.createElement('img');
@@ -15,7 +16,6 @@ loginLogoutButton.addEventListener('click', function (event) {
   }
 });
 
-
 if (isLogin === 'true') {
   loginLogoutButton.textContent = 'Logout';
   loginLogoutButton.style.color = '#ff0000';
@@ -26,6 +26,7 @@ if (isLogin === 'true') {
   userNameButton.style.color = '#58e256';
   userNameButton.style.fontSize = '20px';
   userNameButton.style.fontWeight = 'bold';
+  gameDisplayNav.style.display = 'inline';
 } else {
   loginLogoutButton.textContent = 'Login';
   loginLogoutButton.href = './assets/html/signIn.html';
