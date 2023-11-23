@@ -173,3 +173,67 @@ body::after {
 .item::after {
   border-radius: 10px !important;
 }
+
+#HowToPlay{
+  font-size: 3rem;
+}
+
+.game-Container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 50px;
+  background-color: #20202074;
+  border-radius: 20px;
+ margin-top: 30px;
+ margin-bottom: 55px;
+  box-shadow: 0px 2px 12px 0px #72684e4d;
+
+}
+
+ #HowToPlay{
+  text-align: center;
+  color:var(--text-gold);
+}
+
+.game-Items{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 30px 0px;
+}
+
+.game-Item{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 33%;
+  gap:10px;
+  padding: 40px 20px;
+}
+
+.game-Item span{
+  font-size: 2.5rem;
+  background-color: #d9b34633;
+  border: 3px solid #d9b3468a;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+
+.game-Item h3{
+  color: var(--text-gold);
+}
+
+.game-Item p{
+  font-size: 1rem;
+  width: 350px;
+  text-align: justify;
+}
+
+.game-Item:hover{
+  background-color: #d9b2461b;
+  border-radius: 20px;
+}
