@@ -3,12 +3,12 @@ let btn = document.querySelector('.user-signUpBtn');
 btn.addEventListener('click', (e) => {
   e.preventDefault(); // Prevents the default form submission behavior
 
-  let Name = document.querySelector('.user-name').value;
-  let phone = document.querySelector('.user-phone').value;
-  let Email = document.querySelector('.user-email').value;
-  let Address = document.querySelector('.user-address').value;
-  let Pass = document.querySelector('.user-pass').value;
-  let Cpass = document.querySelector('.user-cPass').value;
+  let Name = document.querySelector('.user-Name').value;
+  let phone = document.querySelector('.user-Phone').value;
+  let Email = document.querySelector('.user-Email').value;
+  let Address = document.querySelector('.user-Address').value;
+  let Pass = document.querySelector('.user-Pass').value;
+  let CPass = document.querySelector('.user-Cpass').value;
 
   if (
     Name === '' ||
@@ -16,13 +16,13 @@ btn.addEventListener('click', (e) => {
     Email === '' ||
     Address === '' ||
     Pass === '' ||
-    Cpass === ''
+    CPass === ''
   ) {
     alert('you must fill the form before signup');
-  } else if (Pass !== Cpass) {
+  } else if (Pass !== CPass) {
     alert('please check your pass');
   } else {
-    let storedData = localStorage.getItem('userData');
+    let storedData = localStorage.getItem('user-Data');
     let userData = [];
 
     if (storedData) {
@@ -35,21 +35,21 @@ btn.addEventListener('click', (e) => {
       email: Email,
       address: Address,
       password: Pass,
-      confirmPassword: Cpass,
+      confirmPassword: CPass,
       scores: 0,
     });
 
     let jsonData = JSON.stringify(userData);
-    localStorage.setItem('userData', jsonData);
+    localStorage.setItem('user-Data', jsonData);
     console.log(jsonData);
     alert('Successful registration and you are logged in');
-    localStorage.setItem('islogin', 'true');
-    localStorage.setItem('userLogin', Name);
+    localStorage.setItem('is-Login', 'true');
+    localStorage.setItem('user-Login', Name);
     window.location.href = './game.html';
   }
 });
 
-let storedData = localStorage.getItem('userData');
+let storedData = localStorage.getItem('user-Data');
 
 if (storedData) {
   let uData = JSON.parse(storedData);

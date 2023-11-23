@@ -1,18 +1,18 @@
 var loginLogoutButton = document.getElementById('signIn-SignUp');
-var userNameButton = document.getElementById('userName-login');
-var gameDisplayNav = document.getElementById('gameDisplay');
-var isLogin = localStorage.getItem('islogin');
-var whoIsLogin = localStorage.getItem('userLogin');
+var userNameButton = document.getElementById('userName-Login');
+var gameDisplayNav = document.getElementById('game-Display');
+var isLogin = localStorage.getItem('is-Login');
+var whoisLogin = localStorage.getItem('user-Login');
 var img = document.createElement('img');
 img.src = '../images/user.svg';
 img.alt = '';
 
 loginLogoutButton.addEventListener('click', function (event) {
-  var isLogin = localStorage.getItem('islogin');
+  var isLogin = localStorage.getItem('is-Login');
 
   if (isLogin === 'true') {
-    localStorage.setItem('islogin', 'false');
-    localStorage.setItem('userLogin', '');
+    localStorage.setItem('is-Login', 'false');
+    localStorage.setItem('user-Login', '');
   }
 });
 
@@ -22,7 +22,7 @@ if (isLogin === 'true') {
   loginLogoutButton.style.fontWeight = 'bold';
   loginLogoutButton.style.fontSize = '20px';
   loginLogoutButton.href = './signIn.html';
-  userNameButton.textContent = `Hi ${whoIsLogin}`;
+  userNameButton.textContent = `Hi ${whoisLogin}`;
   userNameButton.style.color = '#58e256';
   userNameButton.style.fontSize = '20px';
   userNameButton.style.fontWeight = 'bold';

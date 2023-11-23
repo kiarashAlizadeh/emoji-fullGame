@@ -21,38 +21,38 @@ for (var i = 0; i < emojis.length; i++) {
   box.onclick = function () {
     if (!gameActive) return;
 
-    this.classList.add('boxOpen');
+    this.classList.add('box-Open');
     setTimeout(() => {
-      const openBoxes = document.querySelectorAll('.boxOpen');
+      const openBoxes = document.querySelectorAll('.box-Open');
       if (openBoxes.length > 1) {
         const [firstBox, secondBox] = openBoxes;
 
         if (firstBox.innerHTML == secondBox.innerHTML) {
-          firstBox.classList.add('boxMatch');
-          secondBox.classList.add('boxMatch');
+          firstBox.classList.add('box-Match');
+          secondBox.classList.add('box-Match');
           matchesFound += 2;
 
-          firstBox.classList.remove('boxOpen');
-          secondBox.classList.remove('boxOpen');
+          firstBox.classList.remove('box-Open');
+          secondBox.classList.remove('box-Open');
 
           if (matchesFound == emojis.length) {
             gameActive = false;
             alert('You have won the game!😍');
           }
 
-          const userLogin = localStorage.getItem('userLogin'); // دریافت نام کاربری از لوکال استوریج
-          const users = JSON.parse(localStorage.getItem('userData')); // دریافت اطلاعات کاربران از لوکال استوریج
+          const userLogin = localStorage.getItem('user-Login'); // دریافت نام کاربری از لوکال استوریج
+          const users = JSON.parse(localStorage.getItem('user-Data')); // دریافت اطلاعات کاربران از لوکال استوریج
           const player = users.find((user) => user.name === userLogin); // یافتن اطلاعات کاربر
 
           if (player) {
             scorePlayer = Number(player.scores);
             scorePlayer += 1; // افزودن یک امتیاز به کاربر
             player.scores = scorePlayer;
-            localStorage.setItem('userData', JSON.stringify(users)); // بروزرسانی اطلاعات کاربران در لوکال استوریج
+            localStorage.setItem('user-Data', JSON.stringify(users)); // بروزرسانی اطلاعات کاربران در لوکال استوریج
           }
         } else {
-          secondBox.classList.remove('boxOpen');
-          firstBox.classList.remove('boxOpen');
+          secondBox.classList.remove('box-Open');
+          firstBox.classList.remove('box-Open');
         }
       }
 
@@ -68,12 +68,12 @@ for (var i = 0; i < emojis.length; i++) {
 setTimeout(function () {
   var boxes = document.querySelectorAll('.item');
   boxes.forEach(function (box) {
-    box.classList.add('boxOpen');
+    box.classList.add('box-Open');
   });
 
   setTimeout(function () {
     boxes.forEach(function (box) {
-      box.classList.remove('boxOpen');
+      box.classList.remove('box-Open');
     });
   }, 2000);
 }, 500);
@@ -107,7 +107,7 @@ function updateTimerDisplay(seconds) {
   const formattedTime = `${minutes}:${
     remainingSeconds < 10 ? '0' : ''
   }${remainingSeconds}`;
-  document.querySelector('.game-timer').innerText = formattedTime;
+  document.querySelector('.game-Timer').innerText = formattedTime;
 }
 
 function startGame() {

@@ -1,13 +1,13 @@
 window.onload = function () {
   // Check if the user is logged in
-  let isLoggedIn = localStorage.getItem('islogin');
+  let isLoggedIn = localStorage.getItem('is-Login');
   if (isLoggedIn) {
-    let userLogin = localStorage.getItem('userLogin');
-    let storedData = localStorage.getItem('userData');
+    let userLogin = localStorage.getItem('user-Login');
+    let storedData = localStorage.getItem('user-Data');
 
     if (storedData) {
       let userData = JSON.parse(storedData);
-      let scoresTable = document.getElementById('scores-table');
+      let scoresTable = document.getElementById('scores-Table');
 
       userData.forEach((user) => {
         let row = scoresTable.insertRow(-1); // Insert a row at the end of the table
@@ -20,7 +20,7 @@ window.onload = function () {
 
       // Check if the number of rows exceeds a certain threshold to hide the scroll
       if (userData.length <= 10) {
-        let scoresContainer = document.querySelector('.scores-container');
+        let scoresContainer = document.querySelector('.scores-Container');
         scoresContainer.style.overflowY = 'hidden';
       }
     }

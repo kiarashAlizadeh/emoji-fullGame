@@ -1,4 +1,4 @@
-let signInBtn = document.getElementById('signIn-btn');
+let signInBtn = document.getElementById('signIn-Btn');
 
 signInBtn.addEventListener('click', function (e) {
   e.preventDefault();
@@ -6,7 +6,7 @@ signInBtn.addEventListener('click', function (e) {
   let userEmail = document.getElementById('email').value;
   let userPass = document.getElementById('password').value;
 
-  let storedData = localStorage.getItem('userData');
+  let storedData = localStorage.getItem('user-Data');
 
   if (storedData) {
     let userData = JSON.parse(storedData);
@@ -20,7 +20,7 @@ signInBtn.addEventListener('click', function (e) {
       let userLogin = userExists.name;
       localStorage.setItem('userLogin', userLogin);
 
-      localStorage.setItem('islogin', 'true');
+      localStorage.setItem('is-Login', 'true');
       alert('You are logged in!');
       window.location.href = './game.html';
     } else {
