@@ -125,11 +125,11 @@ footer {
   margin-left: 200px;
 }
 
-#footer-emoji {
+#footer-Emoji {
   width: 75px;
 }
 
-.footer-title {
+.footer-Title {
   color: var(--text-gold);
   font-size: 4rem;
   padding-right: 500px;
@@ -138,14 +138,14 @@ footer {
   gap: 5px;
 }
 
-.footer-dec {
+.footer-Dec {
   margin-top: 15px;
   width: 450px;
   line-height: 1.5;
   text-align: justify;
 }
 
-.footer-socialMedia {
+.footer-SocialMedia {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -153,11 +153,11 @@ footer {
   gap: 20px;
 }
 
-.footer-socialMedia img {
+.footer-SocialMedia img {
   width: 40px;
 }
 
-.copy-right {
+.copy-Right {
   background-color: #2a2a2a;
   color: var(--text-gold);
   padding: 10px 20px;
