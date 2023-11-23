@@ -40,7 +40,7 @@
 }
 
 /* Form Section */
-.signUp-title {
+.signUp-Title {
   margin-bottom: 25px;
   font-size: 2rem;
   font-weight: 900;
@@ -89,7 +89,7 @@
   width: 300px;
 }
 
-.create-account {
+.create-Account {
   margin-top: 15px;
   color: var(--text-gold);
   font-size: 1.1rem;
@@ -97,7 +97,7 @@
   font-weight: 600;
 }
 
-.create-account a:hover {
+.create-Account a:hover {
   color: var(--text-gold);
   opacity: 75%;
 }
