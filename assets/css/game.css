@@ -30,7 +30,7 @@ body::after {
 }
 
 /* Game page */
-.container-game {
+.container-Game {
   background-color: var(--secondary-color);
   max-width: 100%;
   width: 500px;
@@ -43,7 +43,7 @@ body::after {
   position: relative;
 }
 
-.game-timer {
+.game-Timer {
   position: absolute;
   top: 35px;
   right: 35px;
@@ -51,7 +51,7 @@ body::after {
   color: var(--text-orange);
 }
 
-.game-form {
+.game-Form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,16 +146,16 @@ body::after {
   backface-visibility: hidden;
 }
 
-.item.boxOpen {
+.item.box-Open {
   transform: rotateY(0deg);
 }
 
-.boxOpen::after {
+.box-Open::after {
   transform: rotateY(180deg);
 }
 
-.boxOpen::after,
-.boxMatch::after {
+.box-Open::after,
+.box-Match::after {
   transform: rotateY(180deg);
 }
 
@@ -191,7 +191,7 @@ body::after {
   box-shadow: 0px 2px 12px 0px #72684e4d;
 
 }
-
+/* How to play section */
  #HowToPlay{
   text-align: center;
   color:var(--text-gold);

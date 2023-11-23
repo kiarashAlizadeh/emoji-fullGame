@@ -94,7 +94,7 @@ function startTimer(timer) {
       clearInterval(timerInterval);
       updateTimerDisplay(0);
       gameActive = false;
-      alert('Time Up!');
+      alert('Time is Up!');
     }
 
     checkTimer(); // Check if the timer should be stopped on each interval
