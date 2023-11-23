@@ -18,7 +18,7 @@ signInBtn.addEventListener('click', function (e) {
       alert('Please enter your email and password');
     } else if (userExists) {
       let userLogin = userExists.name;
-      localStorage.setItem('userLogin', userLogin);
+      localStorage.setItem('user-Login', userLogin);
 
       localStorage.setItem('is-Login', 'true');
       alert('You are logged in!');
