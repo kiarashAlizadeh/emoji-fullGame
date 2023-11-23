@@ -16,6 +16,7 @@
   <body>
     <!-- Navbar -->
     <nav>
+
       <a href="../../index.html" id="brand-logo">
         <img src="../images/Game/Happy.gif" alt="" />
         Emoji Game
@@ -23,7 +24,9 @@
 
       <ul>
         <li><a href="../../index.html">Home</a></li>
-        <li><a href="./game.html">Game</a></li>
+        <li>
+          <a href="./game.html" id="gameDisplay" style="display: none">Game</a>
+        </li>
         <li><a class="active" href="./scores.html">Scores</a></li>
         <li><a href="./settings.html">Setting</a></li>
       </ul>
@@ -34,7 +37,7 @@
     </nav>
 
     <!-- Scores Table -->
-    <div class="scores-container">
+    <div class="scores-Container">
       <table id="scores-table">
         <tr style="background-color: transparent">
           <th>Name</th>
