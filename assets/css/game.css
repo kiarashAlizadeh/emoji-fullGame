@@ -191,7 +191,7 @@ body::after {
   box-shadow: 0px 2px 12px 0px #72684e4d;
 
 }
-
+/* How to play section */
  #HowToPlay{
   text-align: center;
   color:var(--text-gold);
