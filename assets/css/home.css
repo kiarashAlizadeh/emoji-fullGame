@@ -157,13 +157,7 @@
   font-weight: 600;
 }
 
-.brand-Logo {
-  display: flex;
-  align-items: center;
-  gap: 45px;
-}
-
-#brand-Logo {
+#programing-Logo {
   width: 550px;
 }
 
