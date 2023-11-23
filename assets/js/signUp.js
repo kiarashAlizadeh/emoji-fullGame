@@ -1,4 +1,4 @@
-let btn = document.querySelector('.user-signUpBtn');
+let btn = document.querySelector('.user-SignUpBtn');
 
 btn.addEventListener('click', (e) => {
   e.preventDefault(); // Prevents the default form submission behavior
