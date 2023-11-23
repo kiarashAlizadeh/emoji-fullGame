@@ -41,7 +41,7 @@ nav {
   margin: 2px 40px;
 }
 
-#brand-logo {
+#brand-Logo {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -50,7 +50,7 @@ nav {
   color: var(--text-gold);
 }
 
-#brand-logo img {
+#brand-Logo img {
   width: 60px;
 }
 
@@ -101,7 +101,7 @@ nav ul li a:hover {
   width: 100%;
 }
 
-.userLogin {
+.user-Login {
   display: flex;
   align-items: center;
   gap: 25px;
