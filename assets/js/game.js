@@ -94,7 +94,7 @@ function startTimer(timer) {
       clearInterval(timerInterval);
       updateTimerDisplay(0);
       gameActive = false;
-      alert('Time Up!');
+      alert('Time is Up!');
     }
 
     checkTimer(); // Check if the timer should be stopped on each interval
@@ -107,7 +107,7 @@ function updateTimerDisplay(seconds) {
   const formattedTime = `${minutes}:${
     remainingSeconds < 10 ? '0' : ''
   }${remainingSeconds}`;
-  document.querySelector('.game-timer').innerText = formattedTime;
+  document.querySelector('.game-Timer').innerText = formattedTime;
 }
 
 function startGame() {
