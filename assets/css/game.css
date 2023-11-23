@@ -46,9 +46,13 @@ body::after {
 .game-Timer {
   position: absolute;
   top: 35px;
-  right: 35px;
+  right: -145px;
   font-weight: 900;
+  font-size: 1.2rem;
   color: var(--text-orange);
+  background-color: rgba(255, 0, 0, 0.516);
+  padding: 4px 10px;
+  border-radius: 5px;
 }
 
 .game-Form {
