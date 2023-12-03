@@ -21,6 +21,10 @@ var shuffEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
 var gameActive = true;
 var matchesFound = 0; // Track the number of matches found
 
+const userLogin = localStorage.getItem('user-Login'); // دریافت نام کاربری از لوکال استوریج
+const users = JSON.parse(localStorage.getItem('user-Data')); // دریافت اطلاعات کاربران از لوکال استوریج
+const player = users.find((user) => user.name === userLogin); // یافتن اطلاعات کاربر
+
 for (var i = 0; i < emojis.length; i++) {
   let box = document.createElement('div');
   box.className = 'item';
@@ -48,15 +52,10 @@ for (var i = 0; i < emojis.length; i++) {
             alert('You have won the game!😍');
           }
 
-          const userLogin = localStorage.getItem('user-Login'); // دریافت نام کاربری از لوکال استوریج
-          const users = JSON.parse(localStorage.getItem('user-Data')); // دریافت اطلاعات کاربران از لوکال استوریج
-          const player = users.find((user) => user.name === userLogin); // یافتن اطلاعات کاربر
-
           if (player) {
-            scorePlayer = Number(player.scores);
-            scorePlayer += 1; // افزودن یک امتیاز به کاربر
-            player.scores = scorePlayer;
-            localStorage.setItem('user-Data', JSON.stringify(users)); // بروزرسانی اطلاعات کاربران در لوکال استوریج
+            // scorePlayer = Number(player.scores);
+            // scorePlayer += 1; // افزودن یک امتیاز به کاربر
+            // بروزرسانی اطلاعات کاربران در لوکال استوریج
           }
         } else {
           secondBox.classList.remove('box-Open');
@@ -108,7 +107,7 @@ function startTimer(timer) {
     checkTimer(); // Check if the timer should be stopped on each interval
   }, 1000);
 }
-
+let playerScore;
 function updateTimerDisplay(seconds) {
   const minutes = Math.floor(seconds / 60);
   const remainingSeconds = seconds % 60;
@@ -116,6 +115,9 @@ function updateTimerDisplay(seconds) {
     remainingSeconds < 10 ? '0' : ''
   }${remainingSeconds}`;
   document.querySelector('.game-Timer').innerText = formattedTime;
+  playerScore = seconds; // بروزرسانی مقدار mamad
+  player.scores = playerScore;
+  localStorage.setItem('user-Data', JSON.stringify(users));
 }
 
 function startGame() {
