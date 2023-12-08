@@ -115,9 +115,11 @@ function updateTimerDisplay(seconds) {
     remainingSeconds < 10 ? '0' : ''
   }${remainingSeconds}`;
   document.querySelector('.game-Timer').innerText = formattedTime;
-  playerScore = seconds; // بروزرسانی مقدار mamad
-  player.scores = playerScore;
-  localStorage.setItem('user-Data', JSON.stringify(users));
+  if (gameActive === false) {
+    playerScore = seconds;
+    player.scores = playerScore;
+    localStorage.setItem('user-Data', JSON.stringify(users));
+  }
 }
 
 function startGame() {
