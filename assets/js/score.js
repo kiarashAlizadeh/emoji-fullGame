@@ -7,6 +7,8 @@ window.onload = function () {
 
     if (storedData) {
       let userData = JSON.parse(storedData);
+      userData.sort((a, b) => b.scores - a.scores); // Sort by scores in descending order
+
       let scoresTable = document.getElementById('scores-Table');
 
       userData.forEach((user) => {
