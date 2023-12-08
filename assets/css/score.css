@@ -37,6 +37,10 @@ th {
   border-radius: 15px;
 }
 
+.rank {
+  width: 90px;
+}
+
 tr:nth-child(even) {
   background-color: #9e967f8b;
   min-height: 60px;

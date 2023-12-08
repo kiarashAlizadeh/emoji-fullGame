@@ -11,11 +11,13 @@ window.onload = function () {
 
       let scoresTable = document.getElementById('scores-Table');
 
-      userData.forEach((user) => {
+      userData.forEach((user, index) => {
         let row = scoresTable.insertRow(-1); // Insert a row at the end of the table
-        let nameCell = row.insertCell(0); // Create a cell for the name
-        let scoreCell = row.insertCell(1); // Create a cell for the score
+        let rankCell = row.insertCell(0); // Create a cell for the rank
+        let nameCell = row.insertCell(1); // Create a cell for the name
+        let scoreCell = row.insertCell(2); // Create a cell for the score
 
+        rankCell.textContent = index + 1; // Set the rank in the cell
         nameCell.textContent = user.name; // Set the name in the cell
         scoreCell.textContent = user.scores; // Set the score in the cell
       });
