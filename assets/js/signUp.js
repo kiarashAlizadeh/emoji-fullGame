@@ -22,12 +22,12 @@ btn.addEventListener('click', (e) => {
   } else if (Pass !== CPass) {
     alert('please check your pass');
   } else {
-    // let storedData = localStorage.getItem('user-Data');
+    let storedData = localStorage.getItem('user-Data');
     let userData = [];
 
-    // if (storedData) {
-    //   userData = JSON.parse(storedData);
-    // }
+    if (storedData) {
+      userData = JSON.parse(storedData);
+    }
 
     userData.push({
       name: Name,
