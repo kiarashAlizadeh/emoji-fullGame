@@ -20,7 +20,6 @@ const emojis = [
 
 // Shuffle the emojis array using the Fisher-Yates algorithm
 var shuffEmojis = emojis.sort(() => (Math.random() > 0.5 ? 2 : -1));
-
 // Initialize game-related variables
 var gameActive = true; // Flag to track whether the game is still active
 var matchesFound = 0; // Track the number of matches found

@@ -12,7 +12,6 @@ window.onload = function () {
 
       // Sort user data by scores in descending order
       userData.sort((a, b) => b.scores - a.scores);
-
       // Get a reference to the scores table in the HTML
       let scoresTable = document.getElementById('scores-Table');
 

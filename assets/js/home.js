@@ -10,7 +10,6 @@ infoBtnS.addEventListener('click', () => {
     alert('Please LogIn before start the Game!');
   }
 });
-
 infoBtnLeft.addEventListener('click', () => {
   window.location.href = './assets/html/signIn.html';
 });

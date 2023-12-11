@@ -46,7 +46,6 @@ if (isLogin === 'true') {
 } else {
   // Update the login/logout button for a logged-out user
   loginLogoutButton.textContent = 'Login';
-
   // Set the appropriate image and href based on the current page
   if (currentPath.endsWith('index.html')) {
     loginLogoutButton.insertBefore(imgHome, loginLogoutButton.childNodes[0]);

@@ -22,7 +22,6 @@ signInBtn.addEventListener('click', function (e) {
     let userExists = userData.find(
       (user) => user.email === userEmail && user.password === userPass
     );
-
     // Check if email or password is empty
     if (userEmail === '' || userPass === '') {
       alert('Please enter your email and password');

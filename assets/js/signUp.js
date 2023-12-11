@@ -13,7 +13,6 @@ btn.addEventListener('click', (e) => {
   let Address = document.querySelector('.user-Address').value;
   let Pass = document.querySelector('.user-Pass').value;
   let CPass = document.querySelector('.user-Cpass').value;
-
   // Check if any of the form fields are empty
   if (
     Name === '' ||

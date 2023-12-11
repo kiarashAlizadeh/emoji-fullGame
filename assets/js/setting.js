@@ -12,4 +12,5 @@ Clear.addEventListener('click', () => {
   } else {
     alert('Please LogIN before Clearing the local storage!');
   }
+  
 });
