@@ -1,5 +1,6 @@
-/* SignIn Page Css */
+/* SignIn Page CSS */
 
+/* Container Styles */
 .container-SignIn {
   display: flex;
   justify-content: space-between;
@@ -9,6 +10,7 @@
   box-shadow: #d9b2465b 0px -1px 5px;
 }
 
+/* Right Section Styles */
 .right {
   position: relative;
   width: 50%;
@@ -28,7 +30,7 @@
   user-select: none;
 }
 
-/* Form Section */
+/* Form Section Styles */
 .left {
   background-image: url(../images/signUp/keyboard.png);
   background-position: center center;
@@ -66,6 +68,7 @@
   margin-top: 15px;
 }
 
+/* Button Styles */
 #signIn-Btn {
   padding: 10px 15px;
   border-radius: 10px;
@@ -83,6 +86,7 @@
   color: white;
 }
 
+/* Separator and Link Styles */
 #separator {
   width: 300px;
 }
@@ -92,6 +96,7 @@
   opacity: 75%;
 }
 
+/* Title Styles */
 #signIn-Title {
   margin-bottom: 25px;
   font-size: 2rem;
