@@ -39,6 +39,7 @@ window.onload = function () {
     }
   } else {
     // Redirect to the login page if the user is not logged in
-    window.location.href = './login.html'; // Change this to your login page
+    alert("please Login first") // Change this to your login page
+    window.location.href = './signin.html';
   }
 };
